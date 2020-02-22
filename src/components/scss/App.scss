@@ -1,0 +1,39 @@
+@import 'Variaveis';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Sriracha', cursive;;
+}
+
+App.App {
+    display: grid;
+    grid-template-rows: /*as linhas*/
+        $altura-header
+        nav
+        1fr
+        $altura-footer;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "section"
+        "footer";
+    height: 100vh; /*vh ocupa a tela toda*/
+    width: 100vh;
+    background-color: #F5F5F5;
+}
+
+header.header {
+    grid-area: header;
+}
+
+nav.nav {
+    grid-area: nav;
+}
+
+section.section {
+    grid-area: section;
+}
+
+footer.footer {
+    grid-area: footer;
+}

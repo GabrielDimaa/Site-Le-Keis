@@ -1,0 +1,32 @@
+@import 'Variaveis';
+
+header.header {
+    background-image: url(../../assets/img/Capa.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: $altura-header;
+    width: $largura-header;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    position: relative;
+    top: 80%;
+    transform: translateY(-50%); 
+}
+
+@media(max-width: 768px) {
+    header.header {
+        background-image: url(../../assets//img/CapaMobile.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@media(max-width: 576px) {
+    header.header {
+        background-image: url(../../assets/img/CapaMobile.png);
+        background-repeat: no-repeat;
+    }
+}

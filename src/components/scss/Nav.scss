@@ -1,0 +1,9 @@
+@import 'Variaveis';
+
+#mainNav {
+    background-image: linear-gradient(to right, $cor-menu1, $cor-menu2);
+}
+
+.nav-link {
+    font-size: 18px;
+}
